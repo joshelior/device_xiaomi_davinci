@@ -21,16 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Colt stuff.
-TARGET_BOOT_ANIMATION_RES := 1080x2340
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
 
-TARGET_HAS_FOD := true
-EXTRA_FOD_ANIMATIONS := true
-
+LAWNCHAIR_OPTOUT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 IS_PHONE := true
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 PRODUCT_NAME := colt_davinci
 PRODUCT_DEVICE := davinci
