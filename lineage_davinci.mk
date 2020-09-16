@@ -26,6 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 LAWNCHAIR_OPTOUT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+SAKURA_GAPPS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
