@@ -28,9 +28,10 @@ LAWNCHAIR_OPTOUT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 SAKURA_GAPPS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+IS_PHONE := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_davinci
+PRODUCT_NAME := aosp_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
