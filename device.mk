@@ -299,7 +299,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi-libperfmgr \
+    android.hardware.power@1.3-service.pixel-libperfmgr \
     powerhint.json
 
 # Product characteristics
