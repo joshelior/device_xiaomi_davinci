@@ -25,9 +25,9 @@ INITIAL_COPYRIGHT_YEAR=2020
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-AOSP_ROOT="${MY_DIR}/../../.."
+COLT_ROOT="${MY_DIR}/../../.."
 
-HELPER="${AOSP_ROOT}/vendor/aosp/build/tools/extract_utils.sh"
+HELPER="${COLT_ROOT}/vendor/colt/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -35,7 +35,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for common
-setup_vendor "${DEVICE}" "${VENDOR}" "${AOSP_ROOT}" false
+setup_vendor "${DEVICE}" "${VENDOR}" "${COLT_ROOT}" false
 
 # Copyright headers and guards
 write_headers "${DEVICE}"

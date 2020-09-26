@@ -23,15 +23,15 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
+
 LAWNCHAIR_OPTOUT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-SAKURA_GAPPS := true
+
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 IS_PHONE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_davinci
+PRODUCT_NAME := colt_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
