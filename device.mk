@@ -109,8 +109,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libdng_sdk.vendor \
-    GoogleCamera
+    libdng_sdk.vendor
 
 PRODUCT_PACKAGES += \
     libshim_camera
@@ -292,10 +291,6 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/org.codeaurora.snapcam.xml:system/etc/permissions/org.codeaurora.snapcam.xml
 
 # Power
 PRODUCT_PACKAGES += \
