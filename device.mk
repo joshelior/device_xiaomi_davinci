@@ -295,7 +295,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/com.google.android.GoogleCamera.Urnyx.xml:system/etc/permissions/com.google.android.GoogleCamera.Urnyx.xml
+    $(LOCAL_PATH)/permissions/org.codeaurora.snapcam.xml:system/etc/permissions/org.codeaurora.snapcam.xml
 
 # Power
 PRODUCT_PACKAGES += \
