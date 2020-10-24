@@ -21,10 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Colt stuff.
+# Inherit some common Lineage stuff.
 TARGET_BOOT_ANIMATION_RES := 1080x2340
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
-COLT_DEVICE_MAINTAINER := joshelior
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_HAS_FOD := true
 EXTRA_FOD_ANIMATIONS := true
@@ -33,7 +32,10 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 IS_PHONE := true
 
-PRODUCT_NAME := colt_davinci
+# Inherit oneplus launcher from vendor
+$(call inherit-product, vendor/oplauncher/OPLauncher2.mk)
+
+PRODUCT_NAME := lineage_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
